@@ -8,7 +8,7 @@ This project is intended strictly for educational and authorized use only. It is
 📦 Features at a Glance
 -------------------------------------------------------------------------------------------
 🔐 Feature	                                                    ✅ Available
-SSL & TCP fallback logic	                                            ✔️
+TCP fallback logic	                                                  ✔️
 Multiple shell spawn attempts	                                        ✔️
 Randomized User-Agent spoofing                                      	✔️
 Connection retry mechanism	                                          ✔️
