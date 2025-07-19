@@ -1,7 +1,7 @@
 # ShadowSerpent
 
 📖 About
-ShadowSerpent ProShell++ is a modern, stealth-focused reverse shell crafted in PHP for red-team simulations, adversarial labs, and CTF environments. Unlike legacy shells, it’s optimized for AI-driven detection bypass, randomized behavior, and modular adaptability.
+ShadowSerpent is a modern, stealth-focused reverse shell crafted in PHP for red-team simulations, adversarial labs, and CTF environments. Unlike legacy shells, it’s optimized for AI-driven detection bypass, randomized behavior, and modular adaptability.
 
 This project is intended strictly for educational and authorized use only. It is designed to demonstrate evasion tactics, sandbox interaction, and reverse shell logic in vulnerable environments.
 
