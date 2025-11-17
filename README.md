@@ -4,44 +4,35 @@
 
 📖 About
 
-ShadowSerpent Proshell is a modern, stealth-focused reverse shell crafted in PHP for red-team simulations, adversarial labs, and CTF environments. Unlike legacy shells, it’s optimized for AI-driven detection bypass, randomized behavior, and modular adaptability.
+ShadowSerpent v2: NextGen is the pinnacle of PHP reverse shells, evolved for insane-level robustness in ethical pentesting. It builds on v1's strengths (SSL/TCP fallback, multi-shell, retries, non-blocking I/O) while eradicating weaknesses (firewall handling, auto-reconnect, cross-platform, unobfuscated elements, no encryption, edges).
 
-This project is intended strictly for educational and authorized use only. It is designed to demonstrate evasion tactics, sandbox interaction, and reverse shell logic in vulnerable environments.
+| Feature | Description | Evasion/Benefit |
+|---------|-------------|-----------------|
+| **Multi-Transport** | SSL/TCP primary, HTTP polling fallback | Bypasses outbound filters; common ports blend traffic |
+| **Auto-Reconnect** | Exponential backoff + jitter on drops | Persistent in flaky nets; evades timing-based IDS |
+| **Cross-Platform** | Windows/Linux shells (cmd/powershell vs bash/sh) | Works in mixed envs (Docker, VMs) |
+| **Insane Obfuscation** | Chr/ord, rot13+base64 layers, dynamic builds | Bypasses ANY WAF (Cloudflare, Imperva, AI/ML like Fastly) |
+| **Encryption/Auth** | AES-256/HMAC challenge-response | Secures attacker; prevents hijacks |
+| **Modular Config** | Env/GET encrypted params, C2 integration | Adaptable for beacons, exfil modules |
+| **Performance Opts** | Dynamic buffers, heartbeats, signal cleanup | Handles edges; low CPU in long sessions |
+| **Error Handling** | Try-catch, encrypted diags, non-int fallback | Reliable in restricted (SELinux, disabled funcs) |
+| **Anti-Forensics** | Log suppression, self-delete, no writes | Evades EDR/AV (CrowdStrike, SentinelOne) |
+| **Educational Comments** | Detailed explanations per section | Teaches tactics for red team excellence |
 
-📦 Features at a Glance
--------------------------------------------------------------------------------------------
-🔐 Feature	                                                    ✅ Available
-TCP fallback logic	                                                  ✔️
-Multiple shell spawn attempts	                                        ✔️
-Randomized User-Agent spoofing                                      	✔️
-Connection retry mechanism	                                          ✔️
-Full stealth config (@error_reporting, set_time_limit(0))	            ✔️
-AI evasion simulation via payload behavior	                          ✔️
-Optional self-delete logic	                                          ✔️
-Educational block annotations	                                        ✔️
-
-
-🧠 Use Case
-_______________________
-🧪 Penetration Testing labs
-🕵️ Red-Team simulations
-🧱 AI sandbox bypass testing
-🎓 CTF challenge hosting
-🔬 Stealth shell development experimentation
+🧠 Use Cases
+- 🧪 HTB Pro Labs / THM Advanced Rooms: Bypass WAFs in web vulns.
+- 🕵️ OSCP Exam Scenarios: Stable shells in restricted boxes.
+- 🎓 Red Team Sims / CTFs: Test AI evasion, persistence.
+- 🔬 Production Pentesting: Authorized RCE testing (with permission!).
 
 ⚙️ Setup
-__________________________
-
-$ip = 'YOUR.ATTACKER.IP'; // RealWorld = Your Local System ip 
-                          // CTF = Tryhackme or Hack the Box ip [ it's depends on ctf platform ]
-
-$port = 4455; // Can Use Any Random Port [ Port Should Up to be 1024 ]
-
-💡 Host on a server with RCE or upload vulnerability. Use responsibly and only in lab-approved environments.
+1. Set $ip/$port to your listener (e.g., nc -lvnp 443).
+2. For HTTP fallback, setup C2 server handling polls.
+3. Upload via vuln (file upload/RCE), access URL to trigger.
+4. Obfuscate further: Wrap in eval(base64_decode(...)) for deployment.
+5. Test in VM: Simulate WAF with ModSecurity.
 
 🧾 License & Ethics
-----------------------
-
-This tool is released for ethical research and training only. Unauthorized use against real systems violates legal and community guidelines. Always obtain explicit written permission before deploying.
+MIT for ethical use only. No unauthorized deployment. Stay ethical – red team for good!
 
 Thanks , Stay Ethical use Proper Responsibility.
